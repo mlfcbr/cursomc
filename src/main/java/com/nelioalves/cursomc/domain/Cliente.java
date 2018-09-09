@@ -31,7 +31,7 @@ public class Cliente implements Serializable{
 	
 	private String email;
 	
-	private String cpfOuCNPJ;
+	private String cpfOuCnpj;
 	
 	private Integer tipo;
 		
@@ -70,12 +70,12 @@ public class Cliente implements Serializable{
 		this.email = email;
 	}
 
-	public String getCpfOuCNPJ() {
-		return cpfOuCNPJ;
+	public String getCpfOuCnpj() {
+		return cpfOuCnpj;
 	}
 
-	public void setCpfOuCNPJ(String cpfOuCNPJ) {
-		this.cpfOuCNPJ = cpfOuCNPJ;
+	public void setCpfOuCnpj(String cpfOuCnpj) {
+		this.cpfOuCnpj = cpfOuCnpj;
 	}
 
 	public TipoCliente getTipo() {
@@ -120,12 +120,12 @@ public class Cliente implements Serializable{
 		super();
 	}
 	
-	public Cliente(Integer id, String nome, String email, String cpfOuCNPJ, TipoCliente tipo) {
+	public Cliente(Integer id, String nome, String email, String cpfOuCnpj, TipoCliente tipo) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
-		this.cpfOuCNPJ = cpfOuCNPJ;
+		this.cpfOuCnpj = cpfOuCnpj;
 		this.tipo = tipo == null ? null : tipo.getCod();
 	}
 
